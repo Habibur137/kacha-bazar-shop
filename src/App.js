@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import GetApp from "./components/GetApp";
 import DiscountProducts from "./components/DiscountProducts";
 import DownloadApp from "./components/DownloadApp";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <GetApp />
       <DiscountProducts />
       <DownloadApp />
+      <Footer />
       <Routes></Routes>
     </div>
   );
