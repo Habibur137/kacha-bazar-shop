@@ -4,6 +4,7 @@ import { Routes } from "react-router-dom";
 import Categories from "./components/Categories";
 import PopularProducts from "./components/PopularProducts";
 import Banner from "./components/Banner";
+import GetApp from "./components/GetApp";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <Categories />
       <PopularProducts />
+      <GetApp />
       <Routes></Routes>
     </div>
   );
