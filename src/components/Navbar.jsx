@@ -33,7 +33,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav className=" sticky top-0 z-10">
+    <nav className=" sticky top-0 z-30">
       <div className="hidden md:flex justify-between items-center py-1 px-8 bg-[#F3F4F6]">
         <div className="text-sm text-gray-700 font-thin">
           We are available 24/7, Need help? Call Us:{" "}

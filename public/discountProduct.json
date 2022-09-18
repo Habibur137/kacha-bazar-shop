@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Organic Bell Pepper",
+    "price": 14,
+    "prvPrice": 16,
+    "id": 1,
+    "off": 10,
+    "image": "./discount-images/Orange-Bell-Pepper-22ct.webp"
+  },
+  {
+    "name": "Mini Pumpkin",
+    "price": 13,
+    "off": 8,
+    "prvPrice": 16,
+    "id": 2,
+    "image": "./discount-images/Mini-Pumpkin-Box-each.webp"
+  },
+  {
+    "name": "Iglotex Cauliflower",
+    "price": 13,
+    "off": 12,
+    "prvPrice": 15,
+    "id": 3,
+    "image": "./discount-images/Iglotex-Cauliflower-Florets.webp"
+  },
+  {
+    "name": "French Green Beans",
+    "price": 15,
+    "off": 10,
+    "prvPrice": 18,
+    "id": 4,
+    "image": "./discount-images/French-Green-Beans-16ct.webp"
+  },
+  {
+    "name": "Escarole",
+    "price": 10,
+    "off": 15,
+    "prvPrice": 12,
+    "id": 5,
+    "image": "./discount-images/Escarole-1ct.webp"
+  },
+  {
+    "name": "Haitian Mangoe",
+    "price": 8,
+    "off": 20,
+    "prvPrice": 10,
+    "id": 6,
+    "image": "./discount-images/Haitian-Mango-8ct.webp"
+  },
+  {
+    "name": "Cranberries",
+    "price": 13,
+    "off": 12,
+    "prvPrice": 15,
+    "id": 7,
+    "image": "./discount-images/Cranberries-Package-9-5-oz.webp"
+  },
+  {
+    "name": "Mandarin Clementine",
+    "price": 7,
+    "off": 15,
+    "prvPrice": 9,
+    "id": 8,
+    "image": "./discount-images/Mandarin-Clementine-22lb.webp"
+  }
+]
