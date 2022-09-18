@@ -6,6 +6,7 @@ import PopularProducts from "./components/PopularProducts";
 import Banner from "./components/Banner";
 import GetApp from "./components/GetApp";
 import DiscountProducts from "./components/DiscountProducts";
+import DownloadApp from "./components/DownloadApp";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <PopularProducts />
       <GetApp />
       <DiscountProducts />
+      <DownloadApp />
       <Routes></Routes>
     </div>
   );
