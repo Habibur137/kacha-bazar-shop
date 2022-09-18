@@ -33,8 +33,8 @@ const Navbar = () => {
   });
 
   return (
-    <nav>
-      <div className="sm:hidden md:flex justify-between items-center py-1 px-8 bg-[#F3F4F6]">
+    <nav className=" sticky top-0 z-10">
+      <div className="hidden md:flex justify-between items-center py-1 px-8 bg-[#F3F4F6]">
         <div className="text-sm text-gray-700 font-thin">
           We are available 24/7, Need help? Call Us:{" "}
           <span className="text-[#10BFB2] font-thin">+01234560352</span>
@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:flex md:items-center md:justify-between bg-[#10B981] py-4 md:px-10 md:sticky">
+      <div className="flex md:flex md:items-center md:justify-between bg-[#10B981] py-4 md:px-10">
         {/* home icon  */}
         <div className="flex items-center gap-1">
           <BsFillBagCheckFill className="text-white text-4xl" />

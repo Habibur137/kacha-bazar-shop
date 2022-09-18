@@ -12,7 +12,7 @@ const PopularProducts = () => {
     products();
   }, []);
   return (
-    <div>
+    <div className="popular-gradient py-4 md:py-16">
       {" "}
       <h1 className="text-center mb-3 text-2xl font-bold">
         Popular Products for Daily Shopping
@@ -22,7 +22,7 @@ const PopularProducts = () => {
         needs products from this list and get some special offer with free
         shipping.
       </p>
-      <div className="grid md:grid grid-cols-2 md:grid-cols-5 gap-3 px-4 md:px-10 bg-gray-200 py-6">
+      <div className="grid md:grid grid-cols-2 md:grid-cols-5 gap-3 px-4 md:px-10">
         {products.map((product) => (
           <ProductList key={product.id} product={product} />
         ))}

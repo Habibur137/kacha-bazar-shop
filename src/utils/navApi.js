@@ -107,6 +107,24 @@ const navApi = [
     rightArrow: MdKeyboardArrowRight,
     image: biscuits,
   },
+  {
+    id: 11,
+    name: "Baby Care",
+    subItemOne: "Baby Food",
+    subItemTwo: "Baby Accesories",
+    downArrow: MdKeyboardArrowDown,
+    rightArrow: MdKeyboardArrowRight,
+    image: baby,
+  },
+  {
+    id: 12,
+    name: "Beauty & Health",
+    subItemOne: "Bath",
+    subItemTwo: "Cosmetics",
+    downArrow: MdKeyboardArrowDown,
+    rightArrow: MdKeyboardArrowRight,
+    image: beauty,
+  },
 ];
 
 export default navApi;

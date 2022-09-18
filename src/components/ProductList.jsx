@@ -2,7 +2,6 @@ import React from "react";
 import { BsFillBagPlusFill } from "react-icons/bs";
 
 const ProductList = ({ product }) => {
-  console.log(product);
   return (
     <div className="bg-white p-4 rounded">
       <img

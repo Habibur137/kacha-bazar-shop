@@ -4,7 +4,7 @@ import Category from "./Category";
 
 const Categories = () => {
   return (
-    <div>
+    <div className="category-gradient py-6 md:py-16">
       <h1 className="text-center text-2xl mb-3 font-bold">
         Featured Categories
       </h1>

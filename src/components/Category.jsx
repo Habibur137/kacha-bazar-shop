@@ -1,7 +1,6 @@
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 const Category = ({ category }) => {
-  console.log(category);
   return (
     <div className="flex justify-center h-32 items-center p-3 bg-white border gap-3">
       <img className="w-7 h-7" src={category.image} alt="" />
