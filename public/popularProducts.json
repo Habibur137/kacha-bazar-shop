@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Green Leaf Lettuce",
+    "price": 14,
+    "id": 1,
+    "image": "./popular-products/Green-Leaf-Lettuce-each.webp"
+  },
+  {
+    "name": "Rainbow Chard",
+    "price": 13,
+    "id": 2,
+    "image": "./popular-products/Rainbow-Chard-Package-per-lb.webp"
+  },
+  {
+    "name": "Clementine",
+    "price": 13,
+    "id": 3,
+    "image": "./popular-products/Clementine-5ct.webp"
+  },
+  {
+    "name": "Kale Sprouts",
+    "price": 15,
+    "id": 4,
+    "image": "./popular-products/Kale-Sprouts-3oz.webp"
+  },
+  {
+    "name": "Rainbow Peppers",
+    "price": 15,
+    "id": 5,
+    "image": "./popular-products/Rainbow-Peppers-4ct.webp"
+  },
+  {
+    "name": "Blueberry",
+    "price": 15,
+    "id": 6,
+    "image": "./popular-products/Blackberries-1-25-qt.webp"
+  },
+  {
+    "name": "Calabaza Squash",
+    "price": 15,
+    "id": 7,
+    "image": "./popular-products/Calabaza-Squash-Package-each.webp"
+  },
+  {
+    "name": "Lettuce",
+    "price": 15,
+    "id": 8,
+    "image": "./popular-products/Lettuce-1lb.webp"
+  }
+]

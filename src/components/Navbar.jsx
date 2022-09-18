@@ -28,8 +28,6 @@ let useClickOutside = (handler) => {
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [navItem] = useState(navApi);
-  // let menuRef = useRef();
-  console.log(isNavOpen);
   let domNode = useClickOutside(() => {
     setIsNavOpen(false);
   });
