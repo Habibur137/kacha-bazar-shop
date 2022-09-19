@@ -6,7 +6,7 @@ const Offer = () => {
       <div className="">
         <img className="w-28 h-28" src={ins1} alt="" />
       </div>
-      <div>
+      <div className="border-r-2 border-dotted">
         <p>
           <span className="text-red-500 text-xl">10%</span> Off{" "}
           <span className="bg-red-200 text-red-500 px-2 py-1 rounded-3xl text-xs">
@@ -23,7 +23,7 @@ const Offer = () => {
         <span className="py-1 px-1 bg-red-500 rounded text-white ml-1">00</span>
       </div>
       <div>
-        <p className="p-1 bg-green-200 text-green-500 text-center rounded-md border-dotted border-2 w-28 mx-auto mb-4">
+        <p className="p-1 bg-orange-200 text-orange-600 text-center rounded-md border-dotted border-green-300 border-2 w-28 mx-auto mb-4">
           SUMMER22
         </p>
         <p className="text-xs ml-2">

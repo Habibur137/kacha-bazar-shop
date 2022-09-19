@@ -19,7 +19,7 @@
   },
   {
     "name": "Kale Sprouts",
-    "price": 15,
+    "price": 11,
     "id": 4,
     "image": "./popular-products/Kale-Sprouts-3oz.webp"
   },
@@ -31,7 +31,7 @@
   },
   {
     "name": "Blueberry",
-    "price": 15,
+    "price": 11,
     "id": 6,
     "image": "./popular-products/Blackberries-1-25-qt.webp"
   },
@@ -43,8 +43,38 @@
   },
   {
     "name": "Lettuce",
-    "price": 15,
+    "price": 12,
     "id": 8,
     "image": "./popular-products/Lettuce-1lb.webp"
+  },
+  {
+    "name": "Radicchio",
+    "price": 14,
+    "id": 9,
+    "image": "./popular-products/Radicchio-12ct.webp"
+  },
+  {
+    "name": "Parsley",
+    "price": 13,
+    "id": 10,
+    "image": "./popular-products/Parsley-each.webp"
+  },
+  {
+    "name": "Strawberrie",
+    "price": 10,
+    "id": 11,
+    "image": "./popular-products/Strawberries-9-25oz.webp"
+  },
+  {
+    "name": "Purple Cauliflower",
+    "price": 15,
+    "id": 11,
+    "image": "./popular-products/Organic-Purple-Cauliflower-1lb.webp"
+  },
+  {
+    "name": "Organic Broccoli",
+    "price": 12,
+    "id": 11,
+    "image": "./popular-products/Organic-Broccoli-10oz.webp"
   }
 ]

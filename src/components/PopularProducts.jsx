@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ProductList from "./ProductList";
-
+import { useSelector } from "react-redux";
 const PopularProducts = () => {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    const products = async () => {
-      const res = await fetch("../popularProducts.json");
-      const data = await res.json();
-      setProducts(data);
-    };
-    products();
-  }, []);
+  const { products } = useSelector((state) => state.products);
+  // const [products, setProducts] = useState([]);
+  // useEffect(() => {
+  //   const products = async () => {
+  //     const res = await fetch("../popularProducts.json");
+  //     const data = await res.json();
+  //     setProducts(data);
+  //   };
+  //   products();
+  // }, []);
   return (
     <div className="popular-gradient py-4 md:py-16">
       {" "}
@@ -23,9 +24,12 @@ const PopularProducts = () => {
         shipping.
       </p>
       <div className="grid md:grid grid-cols-2 md:grid-cols-5 gap-3 px-4 md:px-10">
-        {products.map((product) => (
-          <ProductList key={product.id} product={product} />
-        ))}
+        {products.map(
+          (product) =>
+            product.category === "popular" && (
+              <ProductList key={product.id} product={product} />
+            )
+        )}
       </div>
     </div>
   );

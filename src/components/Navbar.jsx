@@ -3,8 +3,13 @@ import { FiUser } from "react-icons/fi";
 import { BsFillBagCheckFill, BsCart2 } from "react-icons/bs";
 import { MdOutlineNotifications, MdKeyboardArrowDown } from "react-icons/md";
 import { BiSearchAlt } from "react-icons/bi";
+import { BsBagCheck } from "react-icons/bs";
+import { MdOutlineCancel } from "react-icons/md";
+import { useSelector } from "react-redux";
+
 import navApi from "../utils/navApi";
 import LinkItem from "./LinkItem";
+import Cart from "./Cart";
 let useClickOutside = (handler) => {
   let domNode = useRef();
 
@@ -26,7 +31,9 @@ let useClickOutside = (handler) => {
 };
 
 const Navbar = () => {
+  const { count } = useSelector((state) => state.products);
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
   const [navItem] = useState(navApi);
   let domNode = useClickOutside(() => {
     setIsNavOpen(false);
@@ -73,11 +80,47 @@ const Navbar = () => {
           <span className="text-2xl text-white cursor-pointer">
             <MdOutlineNotifications />
           </span>
-          <span className="text-2xl text-white cursor-pointer relative">
-            <BsCart2 />
-            <div className="w-5 h-5 rounded-full bg-red-500 absolute -top-2 -right-2">
-              <p className="text-sm text-center">0</p>
+
+          <span className="text-2xl text-white cursor-pointer relative overflow-visible">
+            <BsCart2 onClick={() => setCartOpen(!cartOpen)} />
+            <div
+              onClick={() => setCartOpen(!cartOpen)}
+              className="w-5 h-5 rounded-full bg-red-500 absolute -top-2 -right-2"
+            >
+              <p className="text-sm text-center">{count}</p>
             </div>
+            {/* cart div =================================================== */}
+            {cartOpen && (
+              <div
+                className={`absolute w-[400px] h-screen -top-[60px] -left-[280px] ${
+                  cartOpen ? "block" : "hidden"
+                } bg-white`}
+              >
+                <div className="flex justify-between items-center text-black bg-[#EEF2FF] p-4">
+                  <div className="flex gap-2 items-center">
+                    <BsBagCheck className="text-lg" />{" "}
+                    <span className="text-lg font-semibold">Shopping Cart</span>
+                  </div>
+                  <div className="flex items-center gap-2 ">
+                    <MdOutlineCancel
+                      onClick={() => setCartOpen(false)}
+                      className="text-sm"
+                    />
+                    <button
+                      className="text-sm"
+                      onClick={() => setCartOpen(false)}
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+                <Cart />
+                <div className="bg-[#10B981] absolute w-full bottom-0 left-0 mt-52 rounded p-4 flex items-center justify-between">
+                  <p className="text-lg">Proceed To Checkout</p>
+                  <p className="text-lg">$0.00</p>
+                </div>
+              </div>
+            )}
           </span>
 
           <span className="text-2xl text-white cursor-pointer">
@@ -86,7 +129,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* navbar div  */}
-      <div className="md:flex md:px-10 items-center justify-between py-3">
+      <div className="md:flex md:px-10 items-center justify-between py-3 bg-white">
         <div className="flex gap-7">
           <span>Home</span>
 
