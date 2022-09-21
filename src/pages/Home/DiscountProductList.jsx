@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFillBagPlusFill } from "react-icons/bs";
-import { increment } from "../features/products/productSlice";
+import { increment } from "../../features/products/productSlice";
 import { useDispatch } from "react-redux";
 const DiscountProductList = ({ product }) => {
   const dispatch = useDispatch();
@@ -23,7 +23,7 @@ const DiscountProductList = ({ product }) => {
           </span>
         </p>
         <span
-          // onClick={() => dispatch(increment())}
+          onClick={() => dispatch(increment(product.id))}
           className="p-1 rounded text-xl text-[#10B981] border hover:bg-[#10B981] hover:text-white cursor-pointer"
         >
           <BsFillBagPlusFill />

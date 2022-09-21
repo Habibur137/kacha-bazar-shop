@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const LinkItem = ({ item }) => {
   const [itemOpen, setItemOpen] = useState(false);
   return (
@@ -17,7 +17,9 @@ const LinkItem = ({ item }) => {
       {/* subitem  */}
       {itemOpen && (
         <div className="text-sm py-3 ml-4">
-          <p className="hover:text-[#10B981]">-{item.subItemOne}</p>
+          <Link to={item.link} className="hover:text-[#10B981]">
+            -{item.subItemOne}
+          </Link>
           {item.subItemTwo && (
             <p className="hover:text-[#10B981]">-{item.subItemTwo}</p>
           )}

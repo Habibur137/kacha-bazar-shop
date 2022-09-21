@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import DiscountProductList from "./DiscountProductList";
-
+import { useSelector } from "react-redux";
 const DiscountProducts = () => {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    const products = async () => {
-      const res = await fetch("../discountProduct.json");
-      const data = await res.json();
-      setProducts(data);
-    };
-    products();
-  }, []);
+  const { products } = useSelector((state) => state.products);
+  // const [products, setProducts] = useState([]);
+  // useEffect(() => {
+  //   const products = async () => {
+  //     const res = await fetch("../discountProduct.json");
+  //     const data = await res.json();
+  //     setProducts(data);
+  //   };
+  //   products();
+  // }, []);
   return (
     <div className="popular-gradient py-4 md:py-16">
       {" "}
@@ -22,9 +23,12 @@ const DiscountProducts = () => {
         here and get a special discount with free shipping.
       </p>
       <div className="grid md:grid grid-cols-2 md:grid-cols-5 gap-3 px-4 md:px-10">
-        {products.map((product) => (
-          <DiscountProductList key={product.id} product={product} />
-        ))}
+        {products.map(
+          (product) =>
+            product.category === "discount" && (
+              <DiscountProductList key={product.id} product={product} />
+            )
+        )}
       </div>
     </div>
   );

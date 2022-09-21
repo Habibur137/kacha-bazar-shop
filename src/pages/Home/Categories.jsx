@@ -1,5 +1,5 @@
 import React from "react";
-import navApi from "../utils/navApi";
+import navApi from "../../utils/navApi";
 import Category from "./Category";
 
 const Categories = () => {

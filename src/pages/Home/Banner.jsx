@@ -1,14 +1,15 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination, Autoplay } from "swiper";
-import banner from "../assets/shop-image/banner.jpg";
+import banner from "../../assets/shop-image/banner.jpg";
 
-import Offer from "./Offer";
-import OfferTwo from "./OfferTwo";
+import Offer from "../../components/Offer";
+import OfferTwo from "../../components/OfferTwo";
 const Banner = () => {
   return (
     <div>

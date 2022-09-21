@@ -6,7 +6,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import { BsBagCheck } from "react-icons/bs";
 import { MdOutlineCancel } from "react-icons/md";
 import { useSelector } from "react-redux";
-
+import { Link } from "react-router-dom";
 import navApi from "../utils/navApi";
 import LinkItem from "./LinkItem";
 import Cart from "./Cart";
@@ -131,7 +131,7 @@ const Navbar = () => {
       {/* navbar div  */}
       <div className="md:flex md:px-10 items-center justify-between py-3 bg-white">
         <div className="flex gap-7">
-          <span>Home</span>
+          <Link to={"/"}>Home</Link>
 
           <div className="flex">
             <span className="relative">

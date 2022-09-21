@@ -24,6 +24,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: fish,
+    link: "fish-meat",
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: seafood,
+    link: "sea-food",
   },
   {
     id: 3,
@@ -44,6 +46,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: drinks,
+    link: "drinks",
   },
   {
     id: 4,
@@ -54,6 +57,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: dairy,
+    link: "milk-dairy",
   },
   {
     id: 5,
@@ -62,6 +66,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: organic,
+    link: "organic",
   },
   {
     id: 6,
@@ -70,6 +75,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: honey,
+    link: "honey",
   },
   {
     id: 7,
@@ -79,6 +85,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: sauces,
+    link: "sauces",
   },
   {
     id: 8,
@@ -87,6 +94,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: jelly,
+    link: "jam-jelly",
   },
   {
     id: 9,
@@ -97,6 +105,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: snacks,
+    link: "snacks",
   },
   {
     id: 10,
@@ -106,6 +115,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: biscuits,
+    link: "biscuits",
   },
   {
     id: 11,
@@ -115,6 +125,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: baby,
+    link: "baby",
   },
   {
     id: 12,
@@ -124,6 +135,7 @@ const navApi = [
     downArrow: MdKeyboardArrowDown,
     rightArrow: MdKeyboardArrowRight,
     image: beauty,
+    link: "beauty",
   },
 ];
 

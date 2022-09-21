@@ -1,26 +1,18 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import { Routes } from "react-router-dom";
-import Categories from "./components/Categories";
-import PopularProducts from "./components/PopularProducts";
-import Banner from "./components/Banner";
-import GetApp from "./components/GetApp";
-import DiscountProducts from "./components/DiscountProducts";
-import DownloadApp from "./components/DownloadApp";
+import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
-
+import Home from "./pages/Home/Home";
+import SeaFood from "./pages/SeaFood/SeaFood";
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Banner />
-      <Categories />
-      <PopularProducts />
-      <GetApp />
-      <DiscountProducts />
-      <DownloadApp />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sea-food" element={<SeaFood />} />
+      </Routes>
       <Footer />
-      <Routes></Routes>
     </div>
   );
 }

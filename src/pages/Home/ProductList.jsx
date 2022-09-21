@@ -1,7 +1,7 @@
 import React from "react";
 import { BsFillBagPlusFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
-import { increment } from "../features/products/productSlice";
+import { increment } from "../../features/products/productSlice";
 
 const ProductList = ({ product }) => {
   const dispatch = useDispatch();

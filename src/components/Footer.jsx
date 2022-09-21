@@ -1,8 +1,10 @@
 import React from "react";
+import DownloadApp from "./DownloadApp";
 
 const Footer = () => {
   return (
     <div>
+      <DownloadApp />
       <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 px-10 py-12">
         <div>
           <h1 className="text-xl font-semibold mb-3">Company</h1>

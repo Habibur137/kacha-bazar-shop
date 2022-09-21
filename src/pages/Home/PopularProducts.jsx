@@ -3,15 +3,6 @@ import ProductList from "./ProductList";
 import { useSelector } from "react-redux";
 const PopularProducts = () => {
   const { products } = useSelector((state) => state.products);
-  // const [products, setProducts] = useState([]);
-  // useEffect(() => {
-  //   const products = async () => {
-  //     const res = await fetch("../popularProducts.json");
-  //     const data = await res.json();
-  //     setProducts(data);
-  //   };
-  //   products();
-  // }, []);
   return (
     <div className="popular-gradient py-4 md:py-16">
       {" "}

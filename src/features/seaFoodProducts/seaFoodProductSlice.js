@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
-import products from "./productApi";
+import products from "./seaFoodProductApi";
 
 const initialState = {
   count: 0,
   products: products,
 };
 
-export const productSlice = createSlice({
-  name: "cartUpDown",
+export const seaFoodProductSlice = createSlice({
+  name: "seaFood",
   initialState,
   reducers: {
     increment: (state, action) => {
@@ -39,5 +39,5 @@ export const productSlice = createSlice({
   },
 });
 
-export const { increment, decrement } = productSlice.actions;
-export default productSlice.reducer;
+export const { increment, decrement } = seaFoodProductSlice.actions;
+export default seaFoodProductSlice.reducer;

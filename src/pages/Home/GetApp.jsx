@@ -1,5 +1,5 @@
 import React from "react";
-import boy from "../assets/shop-image/delivery-boy.webp";
+import boy from "../../assets/shop-image/delivery-boy.webp";
 const GetApp = () => {
   return (
     <div className="bg-[#10B981] mx-10 p-14 rounded">
