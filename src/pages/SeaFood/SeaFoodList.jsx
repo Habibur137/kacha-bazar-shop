@@ -1,7 +1,9 @@
 import React from "react";
 import { BsFillBagPlusFill } from "react-icons/bs";
-
+import { useDispatch } from "react-redux";
+import { increment } from "../../features/products/productSlice";
 const SeaFoodList = ({ product }) => {
+  const dispatch = useDispatch();
   return (
     <div className="bg-white p-4 rounded">
       <img
@@ -13,7 +15,7 @@ const SeaFoodList = ({ product }) => {
       <div className="flex justify-between items-center">
         <p className="text-xl font-semibold">${product.price}</p>
         <span
-          //   onClick={() => dispatch(increment(product.id))}
+          onClick={() => dispatch(increment(product.id))}
           className="p-1 rounded text-xl text-[#10B981] border hover:bg-[#10B981] hover:text-white cursor-pointer"
         >
           <BsFillBagPlusFill />

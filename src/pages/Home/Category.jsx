@@ -2,7 +2,7 @@ import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 const Category = ({ category }) => {
   return (
-    <div className="flex justify-center h-32 items-center p-3 bg-white border gap-3">
+    <div className="flex justify-center h-32 items-center p-3 bg-white border gap-3 cursor-pointer">
       <img className="w-7 h-7" src={category.image} alt="" />
       <div>
         <p className="font-extralight">{category.name}</p>

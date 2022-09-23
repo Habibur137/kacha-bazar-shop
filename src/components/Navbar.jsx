@@ -135,7 +135,10 @@ const Navbar = () => {
 
           <div className="flex">
             <span className="relative">
-              <span onClick={() => setIsNavOpen((isNavOpen) => !isNavOpen)}>
+              <span
+                className="cursor-pointer"
+                onClick={() => setIsNavOpen((isNavOpen) => !isNavOpen)}
+              >
                 Categories
               </span>
               {isNavOpen && (
@@ -151,8 +154,8 @@ const Navbar = () => {
             </span>
             <MdKeyboardArrowDown className="mt-1" />
           </div>
-          <span>About US</span>
-          <span>Contact US</span>
+          <Link to="/about">About US</Link>
+          <Link to="/contact">Contact US</Link>
         </div>
         <div className="flex gap-5">
           <span>Privacy Policy</span>

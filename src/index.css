@@ -63,6 +63,22 @@ code {
       hsl(107, 19%, 100%)
     );
 }
+.swiper-button-prev,
+.swiper-button-next {
+  background: #10b981;
+  height: 30px;
+  border-radius: 3px;
+}
+.swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.swiper-button-next::after {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
 
 .popular-gradient {
   background-image: radial-gradient(
