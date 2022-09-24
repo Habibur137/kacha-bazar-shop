@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import navApi from "../utils/navApi";
 import LinkItem from "./LinkItem";
 import Cart from "./Cart";
+
 let useClickOutside = (handler) => {
   let domNode = useRef();
 
@@ -49,10 +50,10 @@ const Navbar = () => {
         <div className="flex gap-3 text-gray-700 ">
           <span className="font-thin">About Us</span>
           <span className="font-thin">Contact Us</span>
-          <div className="flex items-center gap-1">
+          <Link to="/login" className="flex items-center gap-1">
             <FiUser className="text-[#10BFB2] text-sm" />
             <span className="font-thin">Login</span>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="flex md:flex md:items-center md:justify-between bg-[#10B981] py-4 md:px-10">
