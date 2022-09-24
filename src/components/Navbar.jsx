@@ -157,6 +157,7 @@ const Navbar = () => {
           </div>
           <Link to="/about">About US</Link>
           <Link to="/contact">Contact US</Link>
+          <Link to="dashboard">Dashboard</Link>
         </div>
         <div className="flex gap-5">
           <span>Privacy Policy</span>
