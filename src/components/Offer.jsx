@@ -2,7 +2,7 @@ import React from "react";
 import ins1 from "../assets/shop-image/ins3.webp";
 const Offer = () => {
   return (
-    <div className="grid grid-cols-3 gap-1 m-3 bg-white p-2">
+    <div className="hidden md:grid md:grid-cols-3 md:gap-1 m-3 bg-white p-2">
       <div className="">
         <img className="w-28 h-28" src={ins1} alt="" />
       </div>

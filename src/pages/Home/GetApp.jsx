@@ -2,7 +2,7 @@ import React from "react";
 import boy from "../../assets/shop-image/delivery-boy.webp";
 const GetApp = () => {
   return (
-    <div className="bg-[#10B981] mx-10 p-14 rounded">
+    <div className="hidden md:block bg-[#10B981] mx-10 p-14 rounded">
       <div className="flex justify-between items-center bg-white p-10 rounded">
         <div>
           <p className="text-xl mb-2">Organic Products and Food</p>

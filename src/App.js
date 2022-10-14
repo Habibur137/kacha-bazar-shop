@@ -10,6 +10,7 @@ import MainDashBoard from "./pages/Dashboard/MainDashBoard";
 import MyOrders from "./pages/Dashboard/MyOrders";
 import UpdateProfile from "./pages/Dashboard/UpdateProfile";
 import ChangePassword from "./pages/Dashboard/ChangePassword";
+import Register from "./components/Register";
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
           <Route path="change-password" element={<ChangePassword />} />
         </Route>
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </div>

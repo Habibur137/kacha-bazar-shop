@@ -47,13 +47,19 @@ const Navbar = () => {
           We are available 24/7, Need help? Call Us:{" "}
           <span className="text-[#10BFB2] font-thin">+01234560352</span>
         </div>
-        <div className="flex gap-3 text-gray-700 ">
-          <span className="font-thin">About Us</span>
-          <span className="font-thin">Contact Us</span>
-          <Link to="/login" className="flex items-center gap-1">
+        <div className="flex gap-3 items-center text-gray-700 ">
+          <span className="font-thin text-sm">About Us</span>
+          <span className="font-thin text-sm">Contact Us</span>
+          <div className="flex items-center gap-1">
             <FiUser className="text-[#10BFB2] text-sm" />
-            <span className="font-thin">Login</span>
-          </Link>
+            <Link to="/login" className="font-thin text-sm">
+              Login
+            </Link>
+            /
+            <Link to="/register" className="font-thin text-sm">
+              Register
+            </Link>
+          </div>
         </div>
       </div>
       <div className="flex md:flex md:items-center md:justify-between bg-[#10B981] py-4 md:px-10">
@@ -70,7 +76,7 @@ const Navbar = () => {
           <input
             className="md:w-[800px] px-2 py-1 md:px-2 md:py-2.5 rounded outline-none"
             type="text"
-            placeholder="search for products"
+            placeholder="search for products (e.g. fish, apple, oil)"
           />
           <span className="absolute top-1.5 md:top-2.5 right-1 cursor-pointer md:right-2 text-2xl text-gray-300">
             <BiSearchAlt />
@@ -131,7 +137,7 @@ const Navbar = () => {
       </div>
       {/* navbar div  */}
       <div className="md:flex md:px-10 items-center justify-between py-3 bg-white">
-        <div className="flex gap-7">
+        <div className="flex md:flex items-center gap-3 md:gap-7">
           <Link to={"/"}>Home</Link>
 
           <div className="flex">
@@ -155,11 +161,15 @@ const Navbar = () => {
             </span>
             <MdKeyboardArrowDown className="mt-1" />
           </div>
-          <Link to="/about">About US</Link>
-          <Link to="/contact">Contact US</Link>
+          <Link className="hidden md:block" to="/about">
+            About US
+          </Link>
+          <Link className="hidden md:block" to="/contact">
+            Contact US
+          </Link>
           <Link to="dashboard">Dashboard</Link>
         </div>
-        <div className="flex gap-5">
+        <div className="hidden md:flex gap-5">
           <span>Privacy Policy</span>
           <span>Terms & Conditions</span>
         </div>
